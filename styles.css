@@ -26,6 +26,16 @@ body{
     animation: fadeIn 1.5s ease-in-out;
     position: relative;
 }
+.logo {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+    max-width: 150px; /* Prevents oversized logo */
+}
+@media (max-width: 768px) {
+    .logo {
+        height: 40px; /* Smaller size for mobile */
+    }
+}
 
 
 
