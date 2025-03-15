@@ -1,0 +1,359 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar brand styling */
+.navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E74C3C !important;
+}.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/hero1.jpg') center/cover;
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.hero-section h1 {
+    font-size: 2.2rem;
+    animation: slideInDown 1s ease-in-out;
+    
+}
+.hero-section p {
+    font-size: 1.1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.features i {
+    transition: transform 0.3s ease-in-out;
+}
+.features i:hover {
+    transform: scale(1.15);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}.about-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}/* Services Section */
+#services {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+}
+
+/* Section Heading */
+#services h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#services p.lead {
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Service Card */
+.service {
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Service Icon */
+.service i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.service:hover i {
+    transform: scale(1.2);
+}
+
+/* Service Title */
+.service h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Individual Card Colors */
+.service:nth-child(1) {
+    border-left: 6px solid #28a745;
+}
+
+.service:nth-child(2) {
+    border-left: 6px solid #17a2b8;
+}
+
+.service:nth-child(3) {
+    border-left: 6px solid #dc3545;
+}
+
+.service:nth-child(4) {
+    border-left: 6px solid #ffc107;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #services h2 {
+        font-size: 28px;
+    }
+
+    .service {
+        padding: 25px;
+    }
+
+    .service h3 {
+        font-size: 20px;
+    }
+
+    .service i {
+        font-size: 40px;
+    }
+}
+
+
+#testimonials .swiper {
+    width: 80%;
+    max-width: 900px; /* Prevents excessive stretching */
+    margin: auto;
+}
+
+.testimonial {
+    width: 90%;
+    max-width: 700px; /* Ensures proper width for readability */
+    margin: auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #testimonials .swiper {
+        width: 95%;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+} 
+
+.testimonial img {
+    width: 100px;  /* Adjust the size as needed */
+    height: 100px;
+    object-fit: cover; /* Ensures the image stays proportional */
+    border-radius: 50%; /* Makes it perfectly round */
+    border: 3px solid #007bff; /* Optional: Adds a border for a polished look */
+}
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+#contact .container {
+    max-width: 900px;
+}
+
+#contact h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contact Form & Details */
+#contact .p-4 {
+    padding: 24px;
+}
+
+#contact .bg-white {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact input:focus, 
+#contact textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    background: #fff;
+}
+
+/* Floating Labels */
+#contact label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #777;
+    background: transparent;
+    padding: 0 5px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+#contact input:focus + label, 
+#contact input:not(:placeholder-shown) + label,
+#contact textarea:focus + label, 
+#contact textarea:not(:placeholder-shown) + label {
+    top: 8px;
+    font-size: 12px;
+    color: #007bff;
+    background: white;
+    padding: 0 5px;
+}
+
+/* Textarea */
+#contact textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+#contact button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact button:hover {
+    background: linear-gradient(135deg, #0056b3, #003c80);
+    transform: scale(1.05);
+}
+
+/* Contact Info */
+#contact .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact .p-4 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact .p-4 a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact .container {
+        max-width: 90%;
+    }
+
+    #contact .row {
+        flex-direction: column;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact h2 {
+        font-size: 24px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #contact button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

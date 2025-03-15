@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareNest- Home Care Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">CareNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+
+    <section id="hero" class="hero-section text-center text-light d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold">Compassionate Home Care Services</h1>
+                    <p class="lead">Professional and dedicated caregivers ensuring quality care at home.</p>
+                    <a href="#contact" class="btn btn-danger btn-lg mt-3">Get In Touch</a>
+                </div>             
+            </div>
+            <div class="row mt-5 features">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-user-nurse fa-3x mb-3"></i>
+                    <h3>Experienced Caregivers</h3>
+                    <p>Our team is composed of highly skilled and compassionate professionals.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-home fa-3x mb-3"></i>
+                    <h3>Comfort at Home</h3>
+                    <p>Providing high-quality support while allowing independence at home.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-heart fa-3x mb-3"></i>
+                    <h3>Personalized Care</h3>
+                    <p>Custom-tailored care plans to meet individual needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">About Us</h2>
+            <p class="lead">We provide personalized home care services tailored to meet individual needs. Our experienced caregivers ensure comfort, independence, and dignity for our clients.</p>
+            <div class="row mt-4 align-items-stretch">
+                <div class="col-md-4">
+                    <div class="about-item p-4 shadow-lg rounded bg-white text-center h-100">
+                        <img src="./assets/caregiver.jpeg" class="img-fluid rounded-circle mb-3" alt="Caregiver">
+                        <i class="fas fa-user-nurse fa-3x mb-3 text-danger"></i>
+                        <h3 class="fw-semibold">Trained Professionals</h3>
+                        <p>Our caregivers are fully trained and experienced to provide top-quality care and support, ensuring safety and well-being.</p>
+                        <a href="#services" class="btn btn-outline-danger mt-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-item p-4 shadow-lg rounded bg-white text-center h-100">
+                        <img src="./assets/homebased.jpg" class="img-fluid rounded-circle mb-3" alt="Home-Based Support">
+                        <i class="fas fa-home fa-3x mb-3 text-primary"></i>
+                        <h3 class="fw-semibold">Home-Based Support</h3>
+                        <p>Enjoy comfortable and high-quality care in the safety and familiarity of your own home, promoting independence and dignity.</p>
+                        <a href="#services" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-item p-4 shadow-lg rounded bg-white text-center h-100">
+                        <img src="./assets/1.jpeg" class="img-fluid rounded-circle mb-3" alt="Compassionate Service">
+                        <i class="fas fa-heart fa-3x mb-3 text-warning"></i>
+                        <h3 class="fw-semibold">Compassionate Service</h3>
+                        <p>We provide care with empathy and understanding, ensuring every client feels valued and respected.</p>
+                        <a href="#contact" class="btn btn-outline-warning mt-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Our Services</h2>
+            <p class="lead">We offer a variety of home care services to enhance quality of life and provide necessary support.</p>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="service p-4 shadow-lg rounded bg-secondary text-center h-100">
+                        <i class="fas fa-hands-helping fa-3x mb-3 text-success"></i>
+                        <h3 class="fw-semibold">Personal Care</h3>
+                        <p>Assistance with daily activities like bathing, dressing, and grooming, ensuring comfort and dignity.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service p-4 shadow-lg rounded bg-secondary text-center h-100">
+                        <i class="fas fa-user-friends fa-3x mb-3 text-info"></i>
+                        <h3 class="fw-semibold">Companionship</h3>
+                        <p>Providing emotional support and friendly conversation to prevent loneliness and isolation.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service p-4 shadow-lg rounded bg-secondary text-center h-100">
+                        <i class="fas fa-pills fa-3x mb-3 text-danger"></i>
+                        <h3 class="fw-semibold">Medication Support</h3>
+                        <p>Helping clients manage and adhere to medication schedules for their health and well-being.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service p-4 shadow-lg rounded bg-secondary text-center h-100">
+                        <i class="fas fa-car fa-3x mb-3 text-warning"></i>
+                        <h3 class="fw-semibold">Transportation</h3>
+                        <p>Safe and reliable transport for medical appointments, shopping, and other essential errands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">What Our Clients Say</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 shadow-lg rounded bg-white position-relative">
+                            <i class="fas fa-quote-left fa-2x text-primary position-absolute top-0 start-0 m-3"></i>
+                            <img src="./assets/client1.jpg" alt="Mary Johnson" class="rounded-circle mb-3">
+                            <p class="lead">"CareNest Home Care has changed my life. Their caregivers are kind, professional, and always go the extra mile!"</p>
+                            <h4 class="fw-semibold text-primary">Mary Johnson</h4>
+                            <p class="text-muted">Senior Citizen</p>
+                            <div class="rating text-warning">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 shadow-lg rounded bg-white position-relative">
+                            <i class="fas fa-quote-left fa-2x text-primary position-absolute top-0 start-0 m-3"></i>
+                            <img src="./assets/client2.jpg" alt="James Smith" class="rounded-circle mb-3">
+                            <p class="lead">"I feel safe and cared for in my home thanks to their dedicated team. Highly recommended!"</p>
+                            <h4 class="fw-semibold text-primary">James Smith</h4>
+                            <p class="text-muted">Retired Teacher</p>
+                            <div class="rating text-warning">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 shadow-lg rounded bg-white position-relative">
+                            <i class="fas fa-quote-left fa-2x text-primary position-absolute top-0 start-0 m-3"></i>
+                            <img src="./assets/client3.jpg" alt="Sarah Williams" class="rounded-circle mb-3">
+                            <p class="lead">"Their attention to detail and care for my elderly father have been outstanding. I highly recommend their services!"</p>
+                            <h4 class="fw-semibold text-primary">Sarah Williams</h4>
+                            <p class="text-muted">Daughter of Client</p>
+                            <div class="rating text-warning">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 shadow-lg rounded bg-white position-relative">
+                            <i class="fas fa-quote-left fa-2x text-primary position-absolute top-0 start-0 m-3"></i>
+                            <img src="./assets/client4.jpg" alt="Robert Brown" class="rounded-circle mb-3">
+                            <p class="lead">"A wonderful team that truly understands the needs of senior citizens. Thank you for your dedication!"</p>
+                            <h4 class="fw-semibold text-primary">Robert Brown</h4>
+                            <p class="text-muted">Veteran</p>
+                            <div class="rating text-warning">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Contact Us</h2>
+                <p>Have questions? Get in touch with us today.</p>
+            </div>
+            
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h4 class="mb-3">Send Us a Message</h4>
+                        <form id="contactForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" placeholder="Your Message" required style="height: 120px;"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Contact Details -->
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h4 class="mb-3">Get In Touch</h4>
+                        <p><strong>Email:</strong> <a href="mailto:info@CareNesthomecare.com">info@CareNesthomecare.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><strong>Location:</strong> 123 Main Street, New York, NY, USA</p>
+                        
+                        <!-- Google Map Embed -->
+                        <!-- <div class="ratio ratio-16x9">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.483197048206!2d-74.00597268459578!3d40.71277607933071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDAlNzAnNDYuMCJOIDc0wrAwMicwMC4wIlc!5e0!3m2!1sen!2sus!4v1615388577351" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p style="text-align: center;">&copy; 2025 CareNest Home Care. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+</body>
+</html>
