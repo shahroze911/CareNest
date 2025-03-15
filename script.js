@@ -53,3 +53,14 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         console.error("EmailJS error:", error);
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    let navLinks = document.querySelectorAll(".nav-link");
+    let navbarCollapse = document.querySelector("#navbarNav");
+
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            let bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+            bsCollapse.hide();  // This ensures it closes on click
+        });
+    });
+});
