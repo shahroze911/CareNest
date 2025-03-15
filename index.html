@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareNest- Home Care Services</title>
+    <title>CareNext- Home Care Services</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 
@@ -18,7 +18,7 @@
 <body>
     <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">CareNest</a>
+            <a class="navbar-brand fw-bold" href="#">CareNext</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -154,7 +154,7 @@
                         <div class="testimonial p-4 shadow-lg rounded bg-white position-relative">
                             <i class="fas fa-quote-left fa-2x text-primary position-absolute top-0 start-0 m-3"></i>
                             <img src="./assets/client1.jpg" alt="Mary Johnson" class="rounded-circle mb-3">
-                            <p class="lead">"CareNest Home Care has changed my life. Their caregivers are kind, professional, and always go the extra mile!"</p>
+                            <p class="lead">"CareNext Home Care has changed my life. Their caregivers are kind, professional, and always go the extra mile!"</p>
                             <h4 class="fw-semibold text-primary">Mary Johnson</h4>
                             <p class="text-muted">Senior Citizen</p>
                             <div class="rating text-warning">
@@ -222,15 +222,15 @@
                         <h4 class="mb-3">Send Us a Message</h4>
                         <form id="contactForm">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                 <label for="name">Name</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                 <label for="email">Email</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" placeholder="Your Message" required style="height: 120px;"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message" required style="height: 120px;"></textarea>
                                 <label for="message">Message</label>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Send</button>
@@ -242,18 +242,9 @@
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="p-4 bg-white rounded shadow">
                         <h4 class="mb-3">Get In Touch</h4>
-                        <p><strong>Email:</strong> <a href="mailto:info@CareNesthomecare.com">info@CareNesthomecare.com</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:carenexthomecares@gmail.com">carenexthomecares@gmail.com</a></p>
                         <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
                         <p><strong>Location:</strong> 123 Main Street, New York, NY, USA</p>
-                        
-                        <!-- Google Map Embed -->
-                        <!-- <div class="ratio ratio-16x9">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.483197048206!2d-74.00597268459578!3d40.71277607933071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDAlNzAnNDYuMCJOIDc0wrAwMicwMC4wIlc!5e0!3m2!1sen!2sus!4v1615388577351" 
-                                allowfullscreen="" 
-                                loading="lazy">
-                            </iframe>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -262,10 +253,11 @@
     
 
     <footer>
-        <p style="text-align: center;">&copy; 2025 CareNest Home Care. All rights reserved.</p>
+        <p style="text-align: center;">&copy; 2025 CareNext Home Care. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     
 

@@ -28,3 +28,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+(function() {
+    emailjs.init("062QrqU8Enk1it5Q6"); // Replace with your EmailJS Public Key
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    let formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+    // Send email using EmailJS
+    emailjs.send("service_mkyverp", "template_mm2iu85", formData)
+    .then(function(response) {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+    }, function(error) {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS error:", error);
+    });
+});
